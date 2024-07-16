@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <!----------------------------------------------application-form--------------------------->
+    <section class="application-form">
+        <h1>Application Form Pre-Primary/Primary Section</h1>
+        <form id="applicationForm">
+            <fieldset>
+                <legend>Student Information</legend>
+                <label for="fullName">Name in full (Block letters):</label>
+                <input type="text" id="fullName" name="fullName" placeholder="First / Middle / Last" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="birthPlace">Birth Place:</label>
+                <input type="text" id="birthPlace" name="birthPlace" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="ethnicity">Ethnicity:</label>
+                <input type="text" id="ethnicity" name="ethnicity" required>
+
+                
+                <label for="nationalID">National ID of the parents/guardian:</label>
+                <input type="text" id="nationalID" name="nationalID" required>
+
+                <label for="startDate">Expected Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+
+                <label for="class">Class to be entered:</label>
+                <input type="text" id="class" name="class" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Local Address</legend>
+                <label for="localAddress">Local Address:</label>
+                <textarea id="localAddress" name="localAddress" rows="3" required></textarea>
+
+                
+
+                <label>Student lives with:</label>
+                <input type="radio" id="mother" name="livesWith" value="Mother" required>
+                <label for="mother">Mother</label>
+                <input type="radio" id="father" name="livesWith" value="Father" required>
+                <label for="father">Father</label>
+                <input type="radio" id="both" name="livesWith" value="Both" required>
+                <label for="both">Both</label>
+                <input type="radio" id="guardian" name="livesWith" value="Guardian" required>
+                <label for="guardian">Guardian</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Parent's Information</legend>
+                <div class="parent-info">
+                    <label for="fatherName">Father's Name:</label>
+                    <input type="text" id="fatherName" name="fatherName" required>
+
+                    <label for="fatherOccupation">Occupation:</label>
+                    <input type="text" id="fatherOccupation" name="fatherOccupation" required>
+
+                    
+                    <label for="fatherEmployer">Employer:</label>
+                    <input type="text" id="fatherEmployer" name="fatherEmployer" required>
+
+                    <label for="fatherNationality">Nationality:</label>
+                    <input type="text" id="fatherNationality" name="fatherNationality" required>
+
+                    <label for="fatherVolunteer">Volunteer Interests:</label>
+                    <input type="text" id="fatherVolunteer" name="fatherVolunteer">
+
+                    <label for="fatherPostal">Postal Address:</label>
+                    <input type="text" id="fatherPostal" name="fatherPostal" required>
+
+                    <label for="fatherHome">Home Address:</label>
+                    <input type="text" id="fatherHome" name="fatherHome" required>
+
+                    <label for="fatherOfficeContact">Contact No. (Office):</label>
+                    <input type="text" id="fatherOfficeContact" name="fatherOfficeContact" required>
+
+                    <label for="fatherHomeContact">Contact No. (Home):</label>
+                    <input type="text" id="fatherHomeContact" name="fatherHomeContact">
+
+                    <label for="fatherMobile">Mobile Phone:</label>
+                    <input type="text" id="fatherMobile" name="fatherMobile" required>
+
+                    <label for="fatherEmail">Email:</label>
+                    <input type="email" id="fatherEmail" name="fatherEmail" required>
+                </div>
+
+                <div class="parent-info">
+                    <label for="motherName">Mother's Name:</label>
+                    <input type="text" id="motherName" name="motherName" required>
+
+                    <label for="motherOccupation">Occupation:</label>
+                    <input type="text" id="motherOccupation" name="motherOccupation" required>
+
+                    
+
+                    <label for="motherEmployer">Employer:</label>
+                    <input type="text" id="motherEmployer" name="motherEmployer" required>
+
+                    <label for="motherNationality">Nationality:</label>
+                    <input type="text" id="motherNationality" name="motherNationality" required>
+
+                    <label for="motherVolunteer">Volunteer Interests:</label>
+                    <input type="text" id="motherVolunteer" name="motherVolunteer">
+
+                    <label for="motherPostal">Postal Address:</label>
+                    <input type="text" id="motherPostal" name="motherPostal" required>
+
+                    <label for="motherHome">Home Address:</label>
+                    <input type="text" id="motherHome" name="motherHome" required>
+
+                    <label for="motherOfficeContact">Contact No. (Office):</label>
+                    <input type="text" id="motherOfficeContact" name="motherOfficeContact" required>
+
+                    <label for="motherHomeContact">Contact No. (Home):</label>
+                    <input type="text" id="motherHomeContact" name="motherHomeContact">
+
+                    <label for="motherMobile">Mobile Phone:</label>
+                    <input type="text" id="motherMobile" name="motherMobile" required>
+
+                    <label for="motherEmail">Email:</label>
+                    <input type="email" id="motherEmail" name="motherEmail" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Emergency Contact</legend>
+                <label for="emergencyName">Name:</label>
+                <input type="text" id="emergencyName" name="emergencyName" required>
+
+                <label for="emergencyRelationship">Relationship:</label>
+                <input type="text" id="emergencyRelationship" name="emergencyRelationship" required>
+
+                <label for="emergencyResidence">Contact No. (Residence):</label>
+                <input type="text" id="emergencyResidence" name="emergencyResidence" required>
+
+                <label for="emergencyOffice">Contact No. (Office):</label>
+                <input type="text" id="emergencyOffice" name="emergencyOffice">
+
+                <label for="emergencyMobile">Mobile Phone:</label>
+                <input type="text" id="emergencyMobile" name="emergencyMobile" required>
+
+                <label for="overseasName">Overseas Contact Name (if applicable):</label>
+                <input type="text" id="overseasName" name="overseasName">
+
+                <label for="overseasAddress">Address:</label>
+                <input type="text" id="overseasAddress" name="overseasAddress">
+
+                <label for="overseasCountry">Country:</label>
+                <input type="text" id="overseasCountry" name="overseasCountry">
+
+                <label for="overseasPhone">Phone:</label>
+                <input type="text" id="overseasPhone" name="overseasPhone">
+
+                <label for="overseasEmail">Email:</label>
+                <input type="email" id="overseasEmail" name="overseasEmail">
+            </fieldset>
+
+            <fieldset>
+                <legend>Siblings</legend>
+                <label for="siblingName1">Name:</label>
+                <input type="text" id="siblingName1" name="siblingName1" required>
+
+                <label for="siblingGender1">Gender:</label>
+                <select id="siblingGender1" name="siblingGender1" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="siblingDob1">Date of Birth:</label>
+                <input type="date" id="siblingDob1" name="siblingDob1" required>
+
+                <label for="siblingSchool1">School (if applicable):</label>
+                <input type="text" id="siblingSchool1" name="siblingSchool1">
+            </fieldset>
+
+            <fieldset>
+                <legend>Previous School Experience</legend>
+                <label for="prevSchoolName">Name of the school:</label>
+                <input type="text" id="prevSchoolName" name="prevSchoolName" required>
+
+                <label for="prevSchoolAddress">Address:</label>
+                <input type="text" id="prevSchoolAddress" name="prevSchoolAddress" required>
+
+                <label for="gradesAttended">class attended:</label>
+                <input type="text" id="gradesAttended" name="gradesAttended" required>
+
+                <label for="from">From:</label>
+                <input type="date" id="from" name="from" required>
+
+                <label for="to">To:</label>
+                <input type="date" id="to" name="to" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label>Is your child allergic to anything:</label>
+                <input type="radio" id="allergyYes" name="allergy" value="Yes" required>
+                <label for="allergyYes">Yes</label>
+                <input type="radio" id="allergyNo" name="allergy" value="No" required>
+                <label for="allergyNo">No</label>
+
+                <label>Is your child asthmatic or epileptic:</label>
+                <input type="radio" id="asthmaticYes" name="asthmatic" value="Yes" required>
+                <label for="asthmaticYes">Yes</label>
+                <input type="radio" id="asthmaticNo" name="asthmatic" value="No" required>
+                <label for="asthmaticNo">No</label>
+
+                <label>Has your child had academic difficulties:</label>
+                <input type="radio" id="academicYes" name="academic" value="Yes" required>
+                <label for="academicYes">Yes</label>
+                <input type="radio" id="academicNo" name="academic" value="No" required>
+                <label for="academicNo">No</label>
+
+                <label>Has your child been referred for psychological counseling or testing:</label>
+                <input type="radio" id="counselingYes" name="counseling" value="Yes" required>
+                <label for="counselingYes">Yes</label>
+                <input type="radio" id="counselingNo" name="counseling" value="No" required>
+                <label for="counselingNo">No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>References</legend>
+                <label for="ref1Name">Reference 1 Name:</label>
+                <input type="text" id="ref1Name" name="ref1Name" required>
+
+                <label for="ref1Address">Reference 1 Address:</label>
+                <input type="text" id="ref1Address" name="ref1Address" required>
+
+                <label for="ref2Name">Reference 2 Name:</label>
+                <input type="text" id="ref2Name" name="ref2Name" required>
+
+                <label for="ref2Address">Reference 2 Address:</label>
+                <input type="text" id="ref2Address" name="ref2Address" required>
+            </fieldset>
+
+           
+            </fieldset> <fieldset>
+                <legend>English Proficiency</legend>
+                <label for="yearsEnglish">How many years has the student studied in a school with English as the first language?</label>
+                <input type="number" id="yearsEnglish" name="yearsEnglish" required>
+
+                <label for="englishProficiency">Describe English language proficiency:</label>
+                <select id="englishProficiency" name="englishProficiency" required>
+                    <option value="Fluent">Fluent</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Poor">Poor</option>
+                </select>
+
+            <fieldset>
+                <legend>Photo and Media Consent</legend>
+                <label>Photographs and videos of school events are posted on the school website regularly. Do you permit your child's photos to be included on our website and social media?</label>
+                <input type="radio" id="photoConsentYes" name="photoConsent" value="Yes" required>
+                <label for="photoConsentYes">Yes</label>
+                <input type="radio" id="photoConsentNo" name="photoConsent" value="No" required>
+                <label for="photoConsentNo">No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Declaration</legend>
+                <label>I declare that the above information is correct. I permit my child's full participation in all the activities including religious instruction, which the school includes in its curriculum.</label>
+                <input type="checkbox" id="declaration" name="declaration" required>
+                <label for="declaration">I agree</label>
+            </fieldset>
+
+            <button type="submit" class="submit-btn"><a href="mailto:toddlershavenkindergarten1@gmail.com">submit</a></button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
