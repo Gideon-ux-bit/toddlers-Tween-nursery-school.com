@@ -82,3 +82,44 @@ document.getElementById('applicationForm').addEventListener('submit', function(e
     alert('Form submitted successfully!');
 });
 
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------application-form--------------------------*/
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('applicationForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Collect form data
+        const formData = new FormData(form);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        // Construct the email body
+        const subject = 'Application Form Submission';
+        let body = '';
+        for (const key in data) {
+            if (data.hasOwnProperty(key)) {
+                body += `${key}: ${data[key]}\n`;
+            }
+        }
+        const mailto = 'toddlershavenkindergarten1@gmail.com'; // Replace with your email address
+
+        // Construct mailto link
+        const emailLink = `mailto:${mailto}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // Open default email client
+        window.location.href = emailLink;
+    });
+});
