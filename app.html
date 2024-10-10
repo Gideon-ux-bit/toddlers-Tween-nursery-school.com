@@ -1,222 +1,175 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Form</title>
-    <link rel="icon" type="image/png" href="images/Screenshot 2024-02-14 223741.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>  
-    <!----------------------------------------------application-form--------------------------->
-    <section class="application-form">
-        <h1>Application Form Pre-Primary/Primary Section</h1>
-        <form id="applicationForm">
-            <fieldset>
-                <legend>Student Information</legend>
-                <label for="fullName">Name in full (Block letters):</label>
-                <input type="text" id="fullName" name="fullName" placeholder="First / Middle / Last" required>
-
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required>
-
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Toddlers & Tweens'
+                Haven Nursery and
+                Primary School</title>
+                <link rel="icon" type="image/png" href="images/tt (2).png">
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        
+    <body>
+            <section class="sub-header3">
+                <nav>
+                    <img src="images/tt (2).png" class="logo">
+                    <div class="nav-links" id="nav-links">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="hometest"><a href="about us.html">about us</a>
+                                <ul class="homechild" style="position: absolute; top: 100%; background-color: rgb(121, 188, 255); z-index: 20; border-radius: 10%;">
+                                    <li><a href="our team.html">our Team</a></li>
+                                </ul>
+                            </li>
+                        <li class="hometest"><a href="our facilities.html">our facilities</a>
+                            
+                        </li>
+                        <li class="hometest"><a href="curriculum.html">Curriculum</a>
+                            <ul class="homechild" style="position: absolute; top: 100%; background-color:rgb(121, 188, 255); z-index: 20; border-radius: 10%;">
+                                <li><a href="primary.html"> primary</a></li>
+                                <li><a href="kindergarten.html">kindergarten</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><form><button type="submit" class="submit-btn"><a href="app.html">enroll me</a></button></form></li>
+                                </ul>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </nav>
                 
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" required>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
+            </section>
 
-                
-                <label for="nationalID">National ID of the parents/guardian:</label>
-                <input type="text" id="nationalID" name="nationalID" required>
 
-                
-                <label for="class">Class to be entered:</label>
-                <input type="text" id="class" name="class" required>
-            </fieldset>
 
-            <fieldset>
-                <legend>Local Address</legend>
-                <label for="localAddress">Local Address:</label>
-                <textarea id="localAddress" name="localAddress" rows="3" required></textarea>
 
-                
 
-                <label>Student lives with:</label>
-                <input type="radio" id="mother" name="livesWith" value="Mother" required>
-                <label for="mother">Mother</label>
-                <input type="radio" id="father" name="livesWith" value="Father" required>
-                <label for="father">Father</label>
-                <input type="radio" id="both" name="livesWith" value="Both" required>
-                <label for="both">Both</label>
-                <input type="radio" id="guardian" name="livesWith" value="Guardian" required>
-                <label for="guardian">Guardian</label>
-            </fieldset>
 
-            <fieldset>
-                <legend>Parent's Information</legend>
-                <div class="parent-info">
-                    <label for="fatherName">Father's Name:</label>
-                    <input type="text" id="fatherName" name="fatherName" required>
 
-                    <label for="fatherOccupation">Occupation:</label>
-                    <input type="text" id="fatherOccupation" name="fatherOccupation" required>
 
-                    
-                    <label for="fatherEmployer">Employer:</label>
-                    <input type="text" id="fatherEmployer" name="fatherEmployer" required>
 
-                    <label for="fatherNationality">Nationality:</label>
-                    <input type="text" id="fatherNationality" name="fatherNationality" required>
 
-                    
-                    <label for="fatherHome">Home Address:</label>
-                    <input type="text" id="fatherHome" name="fatherHome" required>
+<!---------------------------------------------------features------------------------------------>
+<section class="features">
+    <h1>Our Facilities</h1>
+    <div class="container">
+       <!-- <div class="box" > -->
+        <div class="item">
+            <div class="text">
+                <h2>Swimming Pool</h2>
+                <p1>A swimming pool for the nursery classes supervised by a trained staff.</p1>
+            </div>
+            <div class="image"><img src="images/IMG-20240611-WA0102.jpg" alt="Swimming Pool"></div>
+        </div>
+       <!-- </div> -->
+        <div class="item">
+            <div class="image"><img src="images/IMG-20240611-WA0036.jpg" alt="Library"></div>
+            <div class="text">
+                <h2>Library</h2>
+                <p1>A well-stocked library and an Audio Visual room. Our Library provides educational, recreational, and cultural materials for our children.</p1>
+            </div>
+        </div>
+        <div class="item">
+            <div class="text">
+                <h2>Innovative Classrooms</h2>
+                <p1>Beautifully decorated classrooms with all the amenities to suit the different age groups. Extensive teaching aids to promote holistic and all-around development in students.</p1>
+            </div>
+            <div class="image"><img src="images/IMG-20240611-WA0037.jpg" alt="Innovative Classrooms"></div>
+        </div>
+        <div class="item">
+            <div class="image"><img src="images/IMG-20240611-WA0092.jpg" ></div>
+            <div class="text">
+                <h2>Play Area</h2>
+                <p1>Fully loaded child friendly attractive outdoor and indoor play areas with  a shady sandpit and a ‘Make-your-Garden’ patch.</p1>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
-                   
-                    <label for="fatherHomeContact">Contact No. (Home):</label>
-                    <input type="text" id="fatherHomeContact" name="fatherHomeContact">
 
-                    <label for="fatherMobile">Mobile Phone:</label>
-                    <input type="text" id="fatherMobile" name="fatherMobile" required>
 
-                    <label for="fatherEmail">Email:</label>
-                    <input type="email" id="fatherEmail" name="fatherEmail" required>
-                </div>
 
-                <div class="parent-info">
-                    <label for="motherName">Mother's Name:</label>
-                    <input type="text" id="motherName" name="motherName" required>
 
-                    <label for="motherOccupation">Occupation:</label>
-                    <input type="text" id="motherOccupation" name="motherOccupation" required>
 
-                    
 
-                    <label for="motherEmployer">Employer:</label>
-                    <input type="text" id="motherEmployer" name="motherEmployer" required>
 
-                    <label for="motherNationality">Nationality:</label>
-                    <input type="text" id="motherNationality" name="motherNationality" required>
 
-                    
-                    <label for="motherHome">Home Address:</label>
-                    <input type="text" id="motherHome" name="motherHome" required>
 
-                   
-                    <label for="motherHomeContact">Contact No. (Home):</label>
-                    <input type="text" id="motherHomeContact" name="motherHomeContact">
 
-                    <label for="motherMobile">Mobile Phone:</label>
-                    <input type="text" id="motherMobile" name="motherMobile" required>
 
-                    <label for="motherEmail">Email:</label>
-                    <input type="email" id="motherEmail" name="motherEmail" required>
-                </div>
-            </fieldset>
 
-            <fieldset>
-                <legend>Emergency Contact</legend>
-                <label for="emergencyName">Name:</label>
-                <input type="text" id="emergencyName" name="emergencyName" required>
 
-                <label for="emergencyRelationship">Relationship:</label>
-                <input type="text" id="emergencyRelationship" name="emergencyRelationship" required>
 
-                
-                <label for="emergencyMobile">Mobile Phone:</label>
-                <input type="text" id="emergencyMobile" name="emergencyMobile" required>
 
-               
-            </fieldset>
+         <!-- <div class="column">
+            <img src="images/IMG-20240611-WA0043.jpg" alt="Swimming Pool">
+            <div class="text-overlay"> 
+                 <h2>Swimming Pool</h2>
+                <p1>A swimming pool for the nursery classes supervised by a trained adult.</p1> 
+            </div>
+        </div>
+        <div class="column">
+            <img src="images/IMG-20240611-WA0048.jpg" alt="Innovative Classrooms">
+            <div class="text-overlay">
+              <h2>Innovative Classrooms</h2>
+               <p1>Tastefully decorated classrooms with all the amenities to suit the different age groups. Extensive teaching aids to promote holistic and all-round development is available.</p1> 
+            </div>
+        </div>
+        <div class="column">
+            <img src="images/IMG-20240611-WA0048.jpg" alt="Innovative Classrooms">
+            <div class="text-overlay">
+                <h2>Innovative Classrooms</h2> 
+                <p1>Tastefully decorated classrooms with all the amenities to suit the different age groups. Extensive teaching aids to promote holistic and all-round development is available.</p1> -->
+            <!-- </div>
+        </div>
+        <div class="column">
+            <img src="images/IMG-20240611-WA0048.jpg" alt="Innovative Classrooms">
+            <div class="text-overlay">
+                 <h2>Innovative Classrooms</h2> 
+                <p1>Tastefully decorated classrooms with all the amenities to suit the different age groups. Extensive teaching aids to promote holistic and all-round development is available.</p1> 
+            </div>
+        </div>
+        <div class="column">
+            <img src="images/IMG-20240611-WA0048.jpg" alt="Innovative Classrooms">
+            <div class="text-overlay">
+                <h2>Innovative Classrooms</h2>
+                <p1>Tastefully decorated classrooms with all the amenities to suit the different age groups. Extensive teaching aids to promote holistic and all-round development is available.</p1>
+            </div>
+        </div> --> 
+    </div> 
 
+</section>
+                        <!-----------------------------------footer------------------------>
+<section class="footer">
+    <h2>Join our mailing list</h2>
+    <p1>Stay up-to-date on upcoming events, future plans and a lot more fun stuff.</p1>
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100087004612577" target="_blank">
+            <i class="fa fa-facebook-f"></i>
+        </a>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+        <form><button type="submit" class="submit-btn"><a href="mailto:toddlershavenkindergarten1@gmail.com">send mail</a></button></form>
+    <p1>&copy; 2024 Toddlers&Tweens Haven School</p1>
+</section>
             
 
-            <fieldset>
-                <legend>Previous School Experience</legend>
-                <label for="prevSchoolName">Name of the school:</label>
-                <input type="text" id="prevSchoolName" name="prevSchoolName" required>
 
-                <label for="prevSchoolAddress">Address:</label>
-                <input type="text" id="prevSchoolAddress" name="prevSchoolAddress" required>
+<!-----------------------------javascript for Toggle menu---------------------->
+<script src="javascript.js"></script>
 
-                <label for="gradesAttended">class attended:</label>
-                <input type="text" id="gradesAttended" name="gradesAttended" required>
 
-                <label for="from">From:</label>
-                <input type="date" id="from" name="from" required>
-
-                <label for="to">To:</label>
-                <input type="date" id="to" name="to" required>
-            </fieldset>
-
-            <fieldset>
-                <legend>Additional Information</legend>
-                <label>Is your child allergic to anything:</label>
-                <input type="radio" id="allergyYes" name="allergy" value="Yes" required>
-                <label for="allergyYes">Yes</label>
-                <input type="radio" id="allergyNo" name="allergy" value="No" required>
-                <label for="allergyNo">No</label>
-
-                <label>Is your child asthmatic or epileptic:</label>
-                <input type="radio" id="asthmaticYes" name="asthmatic" value="Yes" required>
-                <label for="asthmaticYes">Yes</label>
-                <input type="radio" id="asthmaticNo" name="asthmatic" value="No" required>
-                <label for="asthmaticNo">No</label>
-
-                <label>Has your child had academic difficulties:</label>
-                <input type="radio" id="academicYes" name="academic" value="Yes" required>
-                <label for="academicYes">Yes</label>
-                <input type="radio" id="academicNo" name="academic" value="No" required>
-                <label for="academicNo">No</label>
-
-                <label>Has your child been referred for psychological counseling or testing:</label>
-                <input type="radio" id="counselingYes" name="counseling" value="Yes" required>
-                <label for="counselingYes">Yes</label>
-                <input type="radio" id="counselingNo" name="counseling" value="No" required>
-                <label for="counselingNo">No</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>References</legend>
-                <label for="ref1Name">Reference 1 Name:</label>
-                <input type="text" id="ref1Name" name="ref1Name" required>
-
-                <label for="ref1Address">Reference 1 Address:</label>
-                <input type="text" id="ref1Address" name="ref1Address" required>
-
-                <label for="ref2Name">Reference 2 Name:</label>
-                <input type="text" id="ref2Name" name="ref2Name" required>
-
-                <label for="ref2Address">Reference 2 Address:</label>
-                <input type="text" id="ref2Address" name="ref2Address" required>
-            </fieldset>
-
-           
-           
-
-            <fieldset>
-                <legend>Photo and Media Consent</legend>
-                <label>Photographs and videos of school events are posted on the school website regularly. Do you permit your child's photos to be included on our website and social media?</label>
-                <input type="radio" id="photoConsentYes" name="photoConsent" value="Yes" required>
-                <label for="photoConsentYes">Yes</label>
-                <input type="radio" id="photoConsentNo" name="photoConsent" value="No" required>
-                <label for="photoConsentNo">No</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Declaration</legend>
-                <label>I declare that the above information is correct. I permit my child's full participation in all the activities including religious instruction, which the school includes in its curriculum.</label>
-                <input type="checkbox" id="declaration" name="declaration" required>
-                <label for="declaration">I agree</label>
-            </fieldset>
-
-            <button type="submit" class="submit-btn"><a href="mailto:toddlershavenkindergarten1@gmail.com">submit</a></button>
-        </form>
-    </section>
-
-    <script src="script.js"></script>
-</body>
+    </body>
 </html>
